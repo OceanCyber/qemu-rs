@@ -876,7 +876,7 @@ enable-feature-debug-tcg = []
 without-default-features = []
 
 default = [
-    "default-targets",
+    # "default-targets",
     "default-audio-drv",
     "default-options",
     "default-trace-backend",
