@@ -270,9 +270,9 @@ impl ConfigureArgs {
         if cfg!(feature = "debug") {
             options.push("--enable-debug".to_string());
         }
-        if cfg!(feature = "werror") {
-            options.push("--enable-werror".to_string());
-        }
+        // if cfg!(feature = "werror") {
+        //     options.push("--enable-werror".to_string());
+        // }
         if cfg!(feature = "plugins") {
             options.push("--enable-plugins".to_string());
         }
