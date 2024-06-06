@@ -920,7 +920,7 @@ fn main() -> Result<()> {
         install(&build_dir)?;
     }
 
-    println!("cargo:rerun-if-changed=build.rs");
+    println!("cargo:rustc-env=QEMU_OUT_DIR={}", out_dir.display());
 
     Ok(())
 }
