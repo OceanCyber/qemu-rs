@@ -25,6 +25,8 @@
 
 pub const QEMU_VERSION: &str = "9.0.0";
 
+pub const QEMU_OUT_DIR: &str = env!("QEMU_OUT_DIR");
+
 #[cfg(all(feature = "aarch64-linux-user", not(docs_rs)))]
 /// QEMU binary for qemu-aarch64
 pub const QEMU_AARCH64_LINUX_USER: &[u8] =
